@@ -8,11 +8,24 @@
 
 .im1{
     width: 500px;
-    margin-left: 500px;
+    float: left;
+    border: 3px solid rgb(0, 0, 0);
+    margin-right: 15px;
 }
 
-.p1{
-    margin-right: 500px;
+.im2{
+    width: 500px;
+    float: right;
+    border: 3px solid rgb(0, 0, 0);
+    margin-left: 15px;
+}
+
+.whocreated{
+    margin-top: 325px;
+}
+
+.arpanet{
+    margin-top: 200px;
 }
 
 .contenttab{
