@@ -1,0 +1,32 @@
+/*note: i wrote all the comments myself to remember new css keywords*/
+
+.mainbox {
+    margin: auto;
+    padding: 25px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.disclaimer {
+    font-style: italic;
+}
+
+.head1 {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.work{
+    font-style: italic;
+    text-align: center;
+}
+
+.homebutton{
+    background-color: white;
+}
