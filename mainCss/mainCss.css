@@ -1,0 +1,74 @@
+/*note: i wrote all the comments myself to remember new css keywords*/
+
+body {
+    background: #2c293a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mainbox {
+    margin: auto;
+    padding: 25px;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: #0078d7;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+   /* background-color: #10111a;
+    border-radius: 5px;*/
+}
+
+h2 {
+    color: #0078d7;
+    background-color: #10111a;
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #bd64b5;
+    text-decoration:none; /*to remove the underline when on hover*/
+}
+
+.list1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list1 li {
+    margin: 10px 0;
+}
+
+.navbar {
+    background-color: #10111a;
+    position: fixed; /*so i can still see the bar when scrolling*/
+    top: 0; /*to remove the space between the bar and the top*/
+    left: 0;
+    width: 100%;
+    display: flex; /*to make the content next to each others not above*/ 
+    justify-content: center;
+}
+
+.navbar a {
+    display: block;
+    color: #0078d7;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #2c293a;
+    color: #fff;
+}
+
