@@ -6,31 +6,10 @@ p{
     margin-top: 20px;
 }
 
-.slider {
-    width: 100%;
-    max-width: 600px;
-    position: relative;
-    margin: 20px auto;
-}
-
-.slides {
-    display: none;
-}
-
-.active {
-    display: block;
-}
-
-.slider img {
-    width: 100%;
-    height: auto;
-}
-
 .im1{
-    width: 300px;
+    width: 380px;
     float: left;
     border: 3px solid rgb(0, 0, 0);
-    width: 300px;
     margin-top: 20px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
