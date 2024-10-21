@@ -1,0 +1,311 @@
+.container {
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+table {
+    height: 800px;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 800px; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    background-color: white;
+    z-index: 0;
+    padding-right: 100px;
+}
+
+th {
+    padding: 5px;
+}
+
+table tbody tr {
+    text-align: center;
+}
+
+table td {
+    width: 200px;
+    z-index: 1; 
+    position: relative;
+}
+
+table tr {
+    border-bottom: none;
+}
+
+table tr td:not(:first-child) {
+    border-top: 3px solid black;
+}
+
+
+table td:first-child {
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-weight: bold; 
+    padding: 0; 
+}
+
+.networking {
+    top: 0;
+    width: 95%; 
+    height: 125%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+.networking:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.networking .networkingDesc{
+    display: none;
+}
+
+.networking:hover .networkingDesc{
+    display: block;
+    margin-top: 4px;
+}
+
+
+.electronicsLab {
+    top: 0;
+    width: 95%; 
+    height: 170%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+.electronicsLab:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.electronicsLab .electronicsLabDesc{
+    display: none;
+}
+
+.electronicsLab:hover .electronicsLabDesc{
+    display: block;
+    margin-top: 4px;
+}
+
+.Algo {
+    top: 50%;
+    width: 95%; 
+    height: 125%;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+.Algo:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.Algo .algoDesc{
+    display: none;
+}
+
+.Algo:hover .algoDesc{
+    display: block;
+    margin-top: 4px;
+}
+
+
+.nonLinearLab {
+    top: 50%;
+    width: 95%; 
+    height: 175%;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+
+}
+.nonLinearLab:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.nonLinearLab .nonLinearLabDesc{
+    display: none;
+
+}
+
+.nonLinearLab:hover .nonLinearLabDesc{
+    display: block;
+    margin-top: 4px;
+
+}
+
+.Web {
+    top: 0;
+    width: 95%; 
+    height: 125%;
+    background: linear-gradient(135deg, #00c6ff, #f0e130); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+.Web:hover {
+    transform: scale(1.6);
+    font-size: 0.75em;
+}
+
+.Web .webDesc{
+    display: none;
+}
+
+.Web:hover .webDesc{
+    display: block;
+    margin-top: 4px;
+}
+
+.nonLinear {
+    top: 0;
+    width: 95%; 
+    height: 125%;
+    background: linear-gradient(135deg, #ff512f, #dd2476); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.nonLinear:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.nonLinear .nonLinearDesc{
+    display: none;
+}
+
+.nonLinear:hover .nonLinearDesc{
+    display: block;
+    margin-top: 4px;
+}
+
+.networkLab {
+    top: 0;
+    width: 95%; 
+    height: 170%;
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.networkLab:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.networkLab .networkLabDesc{
+    display: none;
+}
+
+.networkLab:hover .networkLabDesc{
+    display: block;
+    margin-top: 4px;
+}
+
+.micro1 {
+    top: 50%;
+    width: 95%; 
+    height: 125%;
+    background: linear-gradient(135deg, #ab9797, #f0e130); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+.micro1:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.micro1 .micro1Desc{
+    display: none;
+}
+
+.micro1:hover .micro1Desc{
+    display: block;
+    margin-top: 4px;
+}
+
+.micro2 {
+    top: 0;
+    width: 95%; 
+    height: 125%;
+    background: linear-gradient(135deg, #ab9797, #f0e130); /* Muted to yellow gradient */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.micro2:hover {
+    transform: scale(1.5);
+    font-size: 0.8em;
+}
+
+.micro2 .micro2Desc{
+    display: none;
+}
+
+.micro2:hover .micro2Desc{
+    display: block;
+    margin-top: 4px;
+}

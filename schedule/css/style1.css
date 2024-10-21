@@ -1,34 +1,18 @@
-/* General table styles */
 .mainbox{
     width: 1200px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.scheduleButton{
+  background-color: white;
+}
+.navbar{
+z-index: 1000;
 }
 
-th, td {
-    border: 1px solid black;
-    text-align: center;
-    vertical-align: top;
-    height: 60px;
-
+h2{
+  margin-top: 50px;
 }
 
-
-
-.network {
-    height: 60px; 
-    background: linear-gradient(to bottom, grey 62.5%, transparent 37.5%);
+.mainbox{
+  margin-top: 20px;
 }
-
-.microprocessors{
-    background: linear-gradient(to bottom, 
-    transparent 12.5%,  /* First 25% fully transparent */
-    grey 12.5%,      /* Start green at 25% */
-    grey 81.5%,      /* Continue green until 75% */
-    transparent 81.5%);   /* Last 25% fully transparent */
-    vertical-align: middle;
-}
-
