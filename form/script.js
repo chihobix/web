@@ -29,7 +29,6 @@ function addSkillsField() {
     newSkillsItem.classList.add('skills-item');
     newSkillsItem.innerHTML = `
         <label>Title: <input type="text" name="skillsTitle" placeholder="Enter the skill title"></label>
-        <label>Description: <input type="text" name="skillsDescription" placeholder="Enter the skill description"></label>
     `;
     skillsContainer.appendChild(newSkillsItem);
 }
@@ -129,7 +128,7 @@ function openResumePage() {
 
                     <div class="skills">
                         <h2><strong>Skills</strong></h2>
-                        <div class="skills-list">
+                        <div class="skill-bar">
                             ${skills.map(item => `<div class="skill">${item}</div>`).join('')}
                         </div>
                     </div>
