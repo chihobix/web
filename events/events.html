@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <link rel="stylesheet" href="../mainCss/mainCss.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../mainPage/mainPage.html" class="homebutton">Home</a>
+        <a href="../mainPage/mainPage.html#projects">Projects</a>
+        <div class="dropdown">
+            <a href="" class="aboutme">About Me</a>
+            <div class="dropdown-content">
+                <a href="../CV/cv.html">CV</a>
+                <a href="../schedule/schedule.html">Schedule</a>
+            </div>
+        </div>
+    </div>
+    <div class="mainbox">
+        <h1>HTML Events</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Supported HTML Tags</th>
+                    <th>W3Schools Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>click</td>
+                    <td>Mouse Events</td>
+                    <td>Occurs when an element is clicked.</td>
+                    <td>&lt;button&gt;, &lt;a&gt;, &lt;div&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onclick.asp" target="_blank">click Event</a></td>
+                </tr>
+                <tr>
+                    <td>dblclick</td>
+                    <td>Mouse Events</td>
+                    <td>Occurs when an element is double-clicked.</td>
+                    <td>&lt;button&gt;, &lt;a&gt;, &lt;div&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_ondblclick.asp" target="_blank">dblclick Event</a></td>
+                </tr>
+                <tr>
+                    <td>mouseover</td>
+                    <td>Mouse Events</td>
+                    <td>Occurs when the pointer is moved onto an element.</td>
+                    <td>&lt;div&gt;, &lt;a&gt;, &lt;button&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onmouseover.asp" target="_blank">mouseover Event</a></td>
+                </tr>
+                <tr>
+                    <td>mouseout</td>
+                    <td>Mouse Events</td>
+                    <td>Occurs when the pointer is moved out of an element.</td>
+                    <td>&lt;div&gt;, &lt;a&gt;, &lt;button&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onmouseout.asp" target="_blank">mouseout Event</a></td>
+                </tr>
+                
+                <tr>
+                    <td>keydown</td>
+                    <td>Keyboard Events</td>
+                    <td>Occurs when a key is pressed down.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;, &lt;body&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onkeydown.asp" target="_blank">keydown Event</a></td>
+                </tr>
+                <tr>
+                    <td>keypress</td>
+                    <td>Keyboard Events</td>
+                    <td>Occurs when a key is pressed and held.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;, &lt;body&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onkeypress.asp" target="_blank">keypress Event</a></td>
+                </tr>
+                <tr>
+                    <td>keyup</td>
+                    <td>Keyboard Events</td>
+                    <td>Occurs when a key is released.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;, &lt;body&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onkeyup.asp" target="_blank">keyup Event</a></td>
+                </tr>
+                
+                <tr>
+                    <td>load</td>
+                    <td>Window Events</td>
+                    <td>Fires when the page has finished loading.</td>
+                    <td>&lt;body&gt;, &lt;img&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onload.asp" target="_blank">load Event</a></td>
+                </tr>
+                <tr>
+                    <td>resize</td>
+                    <td>Window Events</td>
+                    <td>Fires when the browser window is resized.</td>
+                    <td>&lt;window&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onresize.asp" target="_blank">resize Event</a></td>
+                </tr>
+                <tr>
+                    <td>scroll</td>
+                    <td>Window Events</td>
+                    <td>Occurs when an element is scrolled.</td>
+                    <td>&lt;window&gt;, &lt;div&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onscroll.asp" target="_blank">scroll Event</a></td>
+                </tr>
+
+                <tr>
+                    <td>submit</td>
+                    <td>Form Events</td>
+                    <td>Occurs when a form is submitted.</td>
+                    <td>&lt;form&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onsubmit.asp" target="_blank">submit Event</a></td>
+                </tr>
+                <tr>
+                    <td>change</td>
+                    <td>Form Events</td>
+                    <td>Occurs when the value of an element is changed.</td>
+                    <td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onchange.asp" target="_blank">change Event</a></td>
+                </tr>
+                <tr>
+                    <td>focus</td>
+                    <td>Form Events</td>
+                    <td>Occurs when an element gets focus.</td>
+                    <td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onfocus.asp" target="_blank">focus Event</a></td>
+                </tr>
+                <tr>
+                    <td>blur</td>
+                    <td>Form Events</td>
+                    <td>Occurs when an element loses focus.</td>
+                    <td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onblur.asp" target="_blank">blur Event</a></td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Form Events</td>
+                    <td>Fires when the value of an element is changed.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_oninput.asp" target="_blank">input Event</a></td>
+                </tr>
+
+                <tr>
+                    <td>dragstart</td>
+                    <td>Drag Events</td>
+                    <td>Occurs when the user starts dragging an element.</td>
+                    <td>&lt;img&gt;, &lt;div&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_ondragstart.asp" target="_blank">dragstart Event</a></td>
+                </tr>
+                <tr>
+                    <td>drag</td>
+                    <td>Drag Events</td>
+                    <td>Occurs when an element is being dragged.</td>
+                    <td>&lt;img&gt;, &lt;div&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_ondrag.asp" target="_blank">drag Event</a></td>
+                </tr>
+                <tr>
+                    <td>drop</td>
+                    <td>Drag Events</td>
+                    <td>Occurs when an element is dropped.</td>
+                    <td>&lt;img&gt;, &lt;div&gt;, etc.</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_ondrop.asp" target="_blank">drop Event</a></td>
+                </tr>
+
+                <!-- Clipboard Events -->
+                <tr>
+                    <td>copy</td>
+                    <td>Clipboard Events</td>
+                    <td>Fires when the user copies content.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_oncopy.asp" target="_blank">copy Event</a></td>
+                </tr>
+                <tr>
+                    <td>cut</td>
+                    <td>Clipboard Events</td>
+                    <td>Fires when the user cuts content.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_oncut.asp" target="_blank">cut Event</a></td>
+                </tr>
+                <tr>
+                    <td>paste</td>
+                    <td>Clipboard Events</td>
+                    <td>Fires when the user pastes content.</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td><a href="https://www.w3schools.com/jsref/event_onpaste.asp" target="_blank">paste Event</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer">
+        <p class="disclaimer"> Disclaimer: These projects are for academic purposes as part of my university studies</p>
+    </footer>
+</body>
+</html>

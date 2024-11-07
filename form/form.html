@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="../mainCss/mainCss.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../mainPage/mainPage.html" class="homebutton">Home</a>
+        <a href="../mainPage/mainPage.html#projects">Projects</a>
+        <div class="dropdown">
+            <a href="" class="aboutme">About Me</a>
+            <div class="dropdown-content">
+                <a href="../CV/cv.html">CV</a>
+                <a href="../schedule/schedule.html">Schedule</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox">
+        <form id="resumeForm">
+            <h1>Fill in Your Resume Information</h1>
+
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <label>Name: <input type="text" name="name" required></label>
+                <label>Location: <input type="text" name="location"></label>
+                <label>Email: <input type="email" name="email"></label>
+                <label>Phone: <input type="tel" name="phone" required></label>
+            </section>
+
+            <section class="form-section">
+                <h2>Education</h2>
+                <div id="educationContainer">
+                    <div class="education-item">
+                        <label>Title: <input type="text" name="educationTitle" placeholder="Enter the title"></label>
+                        <label>Description: <input type="text" name="educationDescription" placeholder="Enter the description"></label>
+                    </div>
+                </div>
+                <button type="button" onclick="addEducationField()">Add Another Education</button>
+            </section>
+
+            <section class="form-section">
+                <h2>Experience</h2>
+                <div id="experienceContainer">
+                    <div class="experience-item">
+                        <label>Title: <input type="text" name="experienceTitle" placeholder="Enter the title"></label>
+                        <label>Description: <input type="text" name="experienceDescription" placeholder="Enter the description"></label>
+                    </div>
+                </div>
+                <button type="button" onclick="addExperienceField()">Add Another Experience</button>
+            </section>
+
+            <section class="form-section">
+                <h2>Skills</h2>
+                <div id="skillsContainer">
+                    <div class="skills-item">
+                        <label>Title: <input type="text" name="skillsTitle" placeholder="Enter the skill title"></label>
+                    </div>
+                </div>
+                <button type="button" onclick="addSkillsField()">Add Another Skill</button>
+            </section>
+
+            <section class="form-section">
+                <h2>Languages</h2>
+                <div id="languageContainer">
+                    <div class="language-item">
+                        <label>Language: <input type="text" name="language"></label>
+                        <label>Fluency: 
+                            <select name="fluency">
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Fluent">Fluent</option>
+                                <option value="Native">Native</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <button type="button" onclick="addLanguageField()">Add Another Language</button>
+            </section>
+
+            <button type="button" onclick="openResumePage()">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p class="disclaimer"> Disclaimer: These projects are for academic purposes as part of my university studies</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

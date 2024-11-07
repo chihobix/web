@@ -89,10 +89,10 @@
     justify-content: center;
 }
 h1 {
-    font-family: 'Arial', sans-serif; /* Simple, modern font */
+    font-family: 'Arial', sans-serif; 
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e2e2e2; /* Divider below heading */
+    border-bottom: 2px solid #e2e2e2; 
 }
 .disclaimer {
     font-style: italic;
