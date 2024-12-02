@@ -25,6 +25,14 @@ h1.head1 {
     color: black;
 }
 
+h1 {
+    font-family: 'Arial', sans-serif; 
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e2e2; 
+    margin-bottom: 20px;
+}
+
 h2 {
     color: white;
     background-color: rgb(52, 50, 50);

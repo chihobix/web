@@ -10,8 +10,30 @@
 <body>
 
     <div class="navbar">
-        <a href="../mainPage/mainPage.html">Home</a>
-        <a href="project2.html" class="cssbutton"  style="color: black;">CSS</a>
+        <a href="../mainPage/mainPage.html" class="homebutton">Home</a>
+        <a href="../mainPage/mainPage.html#projects">Projects</a>
+        <div class="dropdown">
+            <a href="" class="aboutme">About Me</a>
+            <div class="dropdown-content">
+                <a href="../CV/cv.html">CV</a>
+                <a href="../schedule/schedule.html">Schedule</a>
+            </div>
+        </div>
+    </div>
+    <button id="toggleSidebar">☰</button> 
+    <div class="sidebar", id="sidebar">
+        <h2 class="sidebarTitle">My Reaserch</h2>
+        <a href="../project1/project1.html" >The internet</a>
+        <a href="../project1/webHistory/webHistory.html" >Browsers</a>
+        <a href="../project1/mobile/mobile.html" >Mobile First</a>
+        <a href="../arabic/arabic.html" >ميشال شيحا</a>
+        <a href="../arabic/arabic1.html" >تاريخ الكوميديين في لبنان</a>
+        <a href="project2.html" class="cssbutton" style="color: black;">CSS</a>
+        <a href="../php/phpPage.html" >PHP</a>
+        <a href="../events/events.html" >Events</a>
+        <a href="../XML/index.html" >XML</a>
+        <a href="../Internet statistics/index.html">Internet Statistics</a>
+        <a href="../Security issues/index.html">Internet Security</a>
     </div>
 <div class="mainbox">
     <h1 class="head1">History of CSS</h1>
@@ -71,6 +93,6 @@
     <footer class="footer">
         <p class="disclaimer"> Disclaimer: These projects are for academic purposes as part of my university studies</p>
 </footer>
-
+        <script src="../mainCss/script.js"></script>
 </body>
 </html>

@@ -1,14 +1,3 @@
-.mobilebutton{
-    background-color: rgb(255, 255, 255);
-}
-
-.contenttab{
-    margin-top: 60px;
-}
-
-.mainbox{
-    width: 1200px;
-}
 h1 {
     font-family: 'Arial', sans-serif; 
     text-align: center;
@@ -16,3 +5,8 @@ h1 {
     border-bottom: 2px solid #e2e2e2; 
     margin-bottom: 20px;
 }
+
+.mainbox{
+    width: 1200px;
+}
+

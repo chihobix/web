@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Research</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../mainCss/mainCss.css" />
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="../mainPage/mainPage.html" class="homebutton">Home</a>
+        <a href="../mainPage/mainPage.html#projects">Projects</a>
+        <div class="dropdown">
+            <a href="" class="aboutme">About Me</a>
+            <div class="dropdown-content">
+                <a href="../CV/cv.html">CV</a>
+                <a href="../schedule/schedule.html">Schedule</a>
+            </div>
+        </div>
+    </div>
+    <button id="toggleSidebar">☰</button> 
+    <div class="sidebar" id="sidebar">
+        <h2 class="sidebarTitle">My Research</h2>
+        <a href="../project1/project1.html">The internet</a>
+        <a href="../project1/webHistory/webHistory.html">Browsers</a>
+        <a href="../project1/mobile/mobile.html">Mobile-First</a>
+        <a href="../arabic/arabic.html">ميشال شيحا</a>
+        <a href="../arabic/arabic1.html">تاريخ الكوميديين في لبنان</a>
+        <a href="../project2/project2.html">CSS</a>
+        <a href="../php/phpPage.html">PHP</a>
+        <a href="../events/events.html">Events</a>
+        <a href="index.html"style="color: black; background-color:white">XML</a>
+        <a href="../Internet statistics/index.html">Internet Statistics</a>
+        <a href="../Security issues/index.html">Internet Security</a>
+
+    </div>
+
+    <div class="mainbox">
+        <h1>XML Research</h1>
+
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#tc1">Introduction to XML</a></li>
+            <li><a href="#tc2">External DTD</a></li>
+            <li><a href="#tc3">Standalone XML Documents</a></li>
+            <li><a href="#tc4">XML Methods</a></li>
+        </ul>
+
+        <h2 id="tc1">Introduction to XML</h2>
+        <p>XML (eXtensible Markup Language) is a markup language designed for storing and transporting data. It is both human-readable and machine-readable, making it highly versatile for various applications such as web services, configuration files, and document storage.</p>
+
+        <h2 id="tc2">External DTD</h2>
+        <p>An External DTD (Document Type Definition) allows you to define XML structure and rules in a separate file. This promotes reusability and cleaner XML files.</p>
+        <pre>
+            <code>
+                !ELEMENT note (to, from, heading, body)
+                !ELEMENT to (#PCDATA)
+                !ELEMENT from (#PCDATA)
+                !ELEMENT heading (#PCDATA)
+                !ELEMENT body (#PCDATA)
+            </code>
+        </pre>
+        <p>Example of using an external DTD in an XML file:</p>
+        <pre>
+            <code>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <!DOCTYPE note SYSTEM "example.dtd">
+                <note>
+                    <to>John</to>
+                    <from>Jane</from>
+                    <heading>Reminder</heading>
+                    <body>Don't forget the meeting!</body>
+                </note>
+            </code>
+        </pre>
+
+        <h2 id="tc3">Standalone XML Documents</h2>
+        <p>Standalone XML documents are self-contained and do not reference external DTDs or other resources. The `standalone` attribute in the XML declaration specifies whether the document relies on external declarations.</p>
+        <pre>
+            <code>
+                <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                <note>
+                    <to>John</to>
+                    <from>Jane</from>
+                    <heading>Reminder</heading>
+                    <body>Don't forget the meeting!</body>
+                </note>
+            </code>
+        </pre>
+
+        <h2 id="tc4">XML Methods</h2>
+        <p>Here are some common methods used in XML processing:</p>
+
+        <h3>1. Parsing XML with DOM</h3>
+        <p>The DOM (Document Object Model) parser loads the entire XML document into memory, allowing manipulation of elements and attributes.</p>
+        <pre>
+            <code>
+                const parser = new DOMParser();
+                const xmlString = `
+                    <note>
+                        <to>John</to>
+                        <from>Jane</from>
+                        <heading>Reminder</heading>
+                        <body>Don't forget the meeting!</body>
+                    </note>`;
+                const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+                console.log(xmlDoc.getElementsByTagName("to")[0].textContent);
+            </code>
+        </pre>
+
+        <h3>2. Using XPath</h3>
+        <p>XPath is used to navigate XML documents and retrieve specific elements or attributes.</p>
+        <pre>
+            <code>
+                const evaluator = new XPathEvaluator();
+                const result = evaluator.evaluate("//note/to", xmlDoc, null, XPathResult.ANY_TYPE, null);
+                const node = result.iterateNext();
+                console.log(node.textContent); // Outputs "John"
+            </code>
+        </pre>
+    </div>
+
+    <footer class="footer">
+        <p class="disclaimer">Disclaimer: These projects are for academic purposes as part of my university studies</p>
+    </footer>
+    <script src="../mainCss/script.js"></script>
+</body>
+</html>

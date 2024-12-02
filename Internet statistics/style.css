@@ -1,0 +1,50 @@
+.mainbox{
+    width: 1200px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; 
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e2e2; 
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.chart-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
